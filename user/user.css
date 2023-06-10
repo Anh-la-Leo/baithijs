@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#container {
+    max-width: 1350px;
+    margin: 15px auto;
+}
+
+#container h2 i {
+    margin-right: 10px;
+}
+
+#search_name:focus {
+    border: 2px solid red;
+}
+
+.search {
+    width: 1200px;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    padding: 13px;
+}
+
+.search-menu {
+    padding: 10px 35px 10px;
+    font-size: 15px;
+    width: 50%;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#load {
+    display: flex;
+    justify-content: space-between;
+}
+
+#button {
+
+    background-color: rgb(250, 117, 117);
+    border-radius: 20%;
+    color: aqua;
+}
+
+#formLogin {
+    display: none;
+}
+
+
+
+.inactive {
+    display: none;
+}
+
+#search_area {
+    display: flex;
+    margin: 40px 0 20px;
+}
+
+.selectButton {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form__group {
+    background-color: #fff;
+    position: relative;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.form__group input {
+    font-size: 14px;
+    font-weight: 500;
+    width: 250px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.form__group input:focus {
+    border: 2px solid red;
+}
+
+.form__group input:focus+label,
+.form__group input:valid+label {
+    top: 0px;
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form__group label {
+    outline: none;
+    border: none;
+    position: absolute;
+    pointer-events: none;
+    background-color: #fff;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.form__group span {
+    position: absolute;
+    top: 43.5px;
+    left: 15px;
+}
+
+.form__group #status-label {
+    outline: none;
+    border: none;
+    position: absolute;
+    pointer-events: none;
+    background-color: #fff;
+    left: 15px;
+    top: 0;
+}
+
+.form__group .fa-sort-down {
+    position: absolute;
+    right: 30px;
+    top: 12px;
+}
+
+.form__group #list-status {
+    position: absolute;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 5px 10px 8px #888888;
+    top: 13px;
+    display: none;
+}
+
+.form__group #list-status ul {
+    padding: 0px;
+}
+
+.form__group #list-status ul li {
+    font-size: 14px;
+    padding: 7.5px 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form__group #list-status ul li:hover {
+    background: rgb(249, 220, 218);
+}
+
+.search-menu {
+    padding: 10px 35px 10px;
+    font-size: 15px;
+    width: 50%;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#inputQuyen {
+    width: 100%;
+    height: 40px;
+}
+
+#mySearch {
+    width: 50%;
+    height: 50px;
+}
+
+#list_Quyen {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media (min-width: 994px) {
+    .Company_name {
+        display: none;
+    }
+}
+
+@media (max-width: 993px) {
+    #search_area {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #left {
+        display: none;
+    }
+}
