@@ -5,36 +5,36 @@
     list-style-type: none;
     text-decoration: none;
 }
-        #left {
-            width: 20%;
-            flex-direction: column;
+#left {
+    width: 20%;
+    flex-direction: column;
+      }
+
+ #right {
+    width: 80%;
+     }
+
+ #function_Display {
+     display: flex;
         }
 
-        #right {
-            width: 80%;
+ .tasbar {
+    display: flex;
+    justify-content: space-between;
+    }
+
+  .search-menu {
+    padding: 10px 35px 10px;
+    font-size: 15px;
+    width: 50%;
+    border: 1px solid #ccc;
+    outline: none;
         }
 
-        #function_Display {
-            display: flex;
-        }
-
-        .tasbar {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .search-menu {
-            padding: 10px 35px 10px;
-            font-size: 15px;
-            width: 50%;
-            border: 1px solid #ccc;
-            outline: none;
-        }
-
-        #mySearch {
-            width: 50%;
-            height: 50px;
-        }
+#mySearch {
+   width: 50%;
+   height: 50px;
+      }
     
 #container {
     max-width: 1350px;
